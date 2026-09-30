@@ -41,3 +41,27 @@ article .closing{ color: var(--ink); font-style: italic; }
   font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem; line-height: 1.5;
   color: var(--sage-deep); border-left: 3px solid var(--clay); padding-left: 1.25rem; margin: 2.5rem 0;
 }
+
+/* Главная: темы */
+.topic-card{ transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+.topic-card:hover{ transform: translateY(-2px); box-shadow: 0 6px 20px -12px rgba(58,53,44,.35); }
+.topic-more{ margin-top: 1rem; font-size: .8rem; color: var(--sage-deep); opacity: .75; }
+.topic-card:hover .topic-more{ opacity: 1; }
+.topic-cta{ background: var(--sage-deep); color: var(--bg-card); border: 1px solid var(--sage-deep); transition: background .2s ease; }
+.topic-cta:hover{ background: var(--sage); }
+.topic-cta .topic-more{ color: var(--bg-card); }
+
+/* Главная: образование */
+.edu{ border-left: 1px solid var(--line); }
+.edu li{ display: grid; grid-template-columns: 3.5rem 1fr; gap: 1rem; position: relative; padding: 0 0 1.4rem 1.25rem; }
+.edu li::before{ content: ""; position: absolute; left: -4px; top: .45rem; width: 7px; height: 7px; border-radius: 50%; background: var(--oak); }
+.edu li:last-child{ padding-bottom: 0; }
+.edu-year{ font-size: .85rem; color: var(--oak); padding-top: .1rem; }
+.edu-title{ color: var(--ink); line-height: 1.5; }
+.edu-meta{ font-size: .85rem; color: var(--ink-soft); margin-top: .2rem; line-height: 1.55; }
+
+/* Главная: вопросы */
+#faq summary{ list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+#faq summary::-webkit-details-marker{ display: none; }
+#faq summary::after{ content: "+"; color: var(--oak); font-size: 1.25rem; line-height: 1; transition: transform .2s ease; }
+#faq details[open] summary::after{ transform: rotate(45deg); }
