@@ -1,0 +1,42 @@
+---
+import Base from './Base.astro';
+import ContactButtons from '../components/ContactButtons.astro';
+
+interface Props {
+  title: string;
+  heading: string;
+  topic: string;
+  description: string;
+}
+const { title, heading, topic, description } = Astro.props;
+---
+<Base title={title} description={description}>
+  <header class="sticky top-0 z-30" style="background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom:1px solid var(--line);">
+    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="serif text-lg" style="color:var(--sage-deep)">Юлия Исаева</a>
+      <a href="/#topics" class="text-sm" style="color:var(--ink-soft)">← На главную</a>
+    </div>
+  </header>
+
+  <article class="max-w-2xl mx-auto px-6 pt-14 pb-20">
+    <p class="text-sm mb-4" style="color:var(--sage-deep)">{topic}</p>
+    <h1 class="serif text-3xl md:text-4xl leading-[1.2] mb-8" style="color:var(--ink)">{heading}</h1>
+
+    <slot />
+
+    <div class="card rounded-sm p-8 text-center mt-12">
+      <h2 class="serif text-xl mb-3" style="color:var(--sage-deep)">Записаться на консультацию</h2>
+      <ContactButtons />
+    </div>
+  </article>
+
+  <footer class="border-t" style="border-color:var(--line)">
+    <div class="max-w-2xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-4 justify-between items-center text-sm" style="color:var(--ink-soft)">
+      <span>© 2026 Юлия Исаева</span>
+      <div class="flex gap-6">
+        <a href="https://wa.me/77011109222" class="hover:opacity-70">WhatsApp</a>
+        <a href="mailto:yu.isayeva@gmail.com" class="hover:opacity-70">yu.isayeva@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+</Base>
