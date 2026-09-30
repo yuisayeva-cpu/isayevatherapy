@@ -35,102 +35,148 @@ import Base from '../layouts/Base.astro';
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
+<section id="about" class="max-w-5xl mx-auto px-6 py-20 border-t" style="border-color:var(--line)">
   <div class="grid md:grid-cols-5 gap-10">
-    <h2 class="serif text-2xl md:col-span-2" style="color:var(--sage-deep)">Обо мне</h2>
-    <div class="md:col-span-3 space-y-4" style="color:var(--ink-soft); line-height:1.75">
-      <p>
+    <div class="md:col-span-2">
+      <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color:var(--oak)">Обо мне</p>
+      <h2 class="serif text-3xl leading-tight" style="color:var(--sage-deep)">Бережное пространство, чтобы исследовать себя</h2>
+    </div>
+    <div class="md:col-span-3 space-y-5" style="color:var(--ink-soft); line-height:1.8">
+      <p class="text-lg" style="color:var(--ink)">
         Работаю в гештальт-подходе — в центре внимания контакт с собой, своими чувствами
-        и переживаниями, умение видеть и контактировать с Другим. Помогаю лучше понять
-        внутренние процессы, заметить повторяющиеся сценарии и найти более устойчивые
-        способы справляться с трудностями. Веду частную практику более 5 лет: работаю
-        с внутренними кризисами, эмиграцией, депрессивными состояниями, самоценностью
-        и стыдом, тревогой, сложностями в отношениях и сепарацией.
+        и переживаниями, умение видеть и контактировать с Другим.
+      </p>
+      <p>
+        Помогаю лучше понять внутренние процессы, заметить повторяющиеся сценарии и найти
+        более устойчивые способы справляться с трудностями. Веду частную практику более 5 лет.
       </p>
       <p>
         Для меня важны бережность, уважение к опыту клиента и создание безопасного
         пространства, в котором можно исследовать себя и происходящее в жизни.
       </p>
-      <p>
-        Образование: диплом о профессиональной переподготовке «Психологическое
-        консультирование» (680 часов, АНО ДПО «СИПО», Москва, 2021) и диплом
-        «Гештальт-подход в психологическом консультировании» (Институт
-        гештальт-терапии и практической психологии, 2024). Дополнительно —
-        программа «Московский Гештальт Институт», 1 ступень (180 часов) и
-        постдипломная программа CGTI (Тбилиси) «SELF: от теории к клинической
-        практике» под руководством Jean-Marie Robine (240 часов), включавшая
-        отдельный блок по работе со стыдом.
-      </p>
-      <div class="flex flex-wrap gap-2 pt-2">
-        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">Диплом — СИПО, 2021</span>
-        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">Диплом — Гештальт-подход, 2024</span>
-        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">МГИ, 1 ступень</span>
-        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">CGTI, «SELF»</span>
-        <span class="text-xs px-3 py-1 rounded-full border border-dashed" style="border-color:var(--oak); color:var(--ink-soft)">Аспирантура под руководством Жан-Мари Робина (Франция) — сертификат, ноябрь 2026</span>
-      </div>
-      <p class="text-sm">Также проходила семинары CGTI «Self Theory in the Treatment of Crisis, Trauma, and Bereavement» (Andre Lamy, 2025) и «How should Gestalt therapists adapt their approach to changes in the modern world» (Jan Roubal, 2025), курсы по диагностике личности, основам сексологии и Coursera (Женевский университет) — полный список по запросу.</p>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-5 gap-10 mt-14">
+    <h3 class="serif text-xl md:col-span-2" style="color:var(--sage-deep)">Образование</h3>
+    <div class="md:col-span-3">
+      <ul class="edu">
+        <li>
+          <span class="edu-year">2026</span>
+          <div>
+            <p class="edu-title">Аспирантура для психотерапевтов и психологов под руководством Жан-Мари Робина (Франция)</p>
+            <p class="edu-meta">Программа повышения квалификации · сертификат — ноябрь 2026</p>
+          </div>
+        </li>
+        <li>
+          <span class="edu-year">2024</span>
+          <div>
+            <p class="edu-title">«SELF: от теории к клинической практике»</p>
+            <p class="edu-meta">Постдипломная программа CGTI (Тбилиси) под руководством Жан-Мари Робина · 240 часов, включая блок по работе со стыдом</p>
+          </div>
+        </li>
+        <li>
+          <span class="edu-year">2024</span>
+          <div>
+            <p class="edu-title">«Гештальт-подход в психологическом консультировании»</p>
+            <p class="edu-meta">Диплом · Институт гештальт-терапии и практической психологии</p>
+          </div>
+        </li>
+        <li>
+          <span class="edu-year">—</span>
+          <div>
+            <p class="edu-title">Московский Гештальт Институт, 1 ступень</p>
+            <p class="edu-meta">180 часов</p>
+          </div>
+        </li>
+        <li>
+          <span class="edu-year">2021</span>
+          <div>
+            <p class="edu-title">«Психологическое консультирование»</p>
+            <p class="edu-meta">Диплом о профессиональной переподготовке · АНО ДПО «СИПО», Москва · 680 часов</p>
+          </div>
+        </li>
+      </ul>
+      <p class="text-sm mt-6" style="color:var(--ink-soft); line-height:1.7">Также — семинары CGTI «Self Theory in the Treatment of Crisis, Trauma, and Bereavement» (Andre Lamy, 2025) и «How should Gestalt therapists adapt their approach to changes in the modern world» (Jan Roubal, 2025), курсы по диагностике личности, основам сексологии и Coursera (Женевский университет). Полный список — по запросу.</p>
     </div>
   </div>
 </section>
 
 <!-- TOPICS -->
-<section id="topics" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
-  <h2 class="serif text-2xl mb-2" style="color:var(--sage-deep)">С чем я работаю</h2>
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
-    <a href="/articles/emigration/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+<section id="topics" class="max-w-5xl mx-auto px-6 py-20 border-t" style="border-color:var(--line)">
+  <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color:var(--oak)">Темы</p>
+  <h2 class="serif text-3xl mb-10" style="color:var(--sage-deep)">С чем я работаю</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <a href="/articles/emigration/" class="card topic-card group flex flex-col p-6 rounded-sm">
       <h3 class="serif text-lg mb-2">Эмиграция</h3>
-      <p class="text-sm" style="color:var(--ink-soft)">Адаптация на новом месте, потеря опоры, чувство «между двумя домами».</p>
+      <p class="text-sm flex-1" style="color:var(--ink-soft)">Адаптация на новом месте, потеря опоры, чувство «между двумя домами».</p>
+      <span class="topic-more">Читать →</span>
     </a>
-    <a href="/articles/depression/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+    <a href="/articles/depression/" class="card topic-card group flex flex-col p-6 rounded-sm">
       <h3 class="serif text-lg mb-2">Депрессия</h3>
-      <p class="text-sm" style="color:var(--ink-soft)">Потеря сил и интереса, ощущение, что «всё через силу».</p>
+      <p class="text-sm flex-1" style="color:var(--ink-soft)">Потеря сил и интереса, ощущение, что «всё через силу».</p>
+      <span class="topic-more">Читать →</span>
     </a>
-    <a href="/articles/self-worth/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+    <a href="/articles/self-worth/" class="card topic-card group flex flex-col p-6 rounded-sm">
       <h3 class="serif text-lg mb-2">Самоценность</h3>
-      <p class="text-sm" style="color:var(--ink-soft)">Внутренний критик, сравнение себя с другими, чувство «со мной что-то не так».</p>
+      <p class="text-sm flex-1" style="color:var(--ink-soft)">Внутренний критик, сравнение себя с другими, чувство «со мной что-то не так».</p>
+      <span class="topic-more">Читать →</span>
     </a>
-    <a href="/articles/shame/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+    <a href="/articles/shame/" class="card topic-card group flex flex-col p-6 rounded-sm">
       <h3 class="serif text-lg mb-2">Стыд</h3>
-      <p class="text-sm" style="color:var(--ink-soft)">Желание спрятаться, ощущение себя «неправильным», сложности говорить о своём опыте.</p>
+      <p class="text-sm flex-1" style="color:var(--ink-soft)">Желание спрятаться, ощущение себя «неправильным», сложности говорить о своём опыте.</p>
+      <span class="topic-more">Читать →</span>
     </a>
-    <a href="/articles/anxiety/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+    <a href="/articles/anxiety/" class="card topic-card group flex flex-col p-6 rounded-sm">
       <h3 class="serif text-lg mb-2">Тревога</h3>
-      <p class="text-sm" style="color:var(--ink-soft)">Постоянное напряжение, тревожные мысли, сложности с тем, чтобы расслабиться.</p>
+      <p class="text-sm flex-1" style="color:var(--ink-soft)">Постоянное напряжение, тревожные мысли, сложности с тем, чтобы расслабиться.</p>
+      <span class="topic-more">Читать →</span>
     </a>
-    <a href="/articles/relationships/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+    <a href="/articles/relationships/" class="card topic-card group flex flex-col p-6 rounded-sm">
       <h3 class="serif text-lg mb-2">Отношения</h3>
-      <p class="text-sm" style="color:var(--ink-soft)">Конфликты, дистанция, повторяющиеся сценарии с партнёром.</p>
+      <p class="text-sm flex-1" style="color:var(--ink-soft)">Конфликты, дистанция, повторяющиеся сценарии — с партнёром, семьёй, коллегами.</p>
+      <span class="topic-more">Читать →</span>
     </a>
-    <a href="/articles/separation/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+    <a href="/articles/separation/" class="card topic-card group flex flex-col p-6 rounded-sm">
       <h3 class="serif text-lg mb-2">Сепарация</h3>
-      <p class="text-sm" style="color:var(--ink-soft)">Отделение от родителей, поиск своей опоры, выход из созависимых сценариев.</p>
+      <p class="text-sm flex-1" style="color:var(--ink-soft)">Отделение от родителей, поиск своей опоры, выход из созависимых сценариев.</p>
+      <span class="topic-more">Читать →</span>
+    </a>
+    <a href="#booking" class="topic-cta flex flex-col p-6 rounded-sm">
+      <h3 class="serif text-lg mb-2">Не нашли свою тему?</h3>
+      <p class="text-sm flex-1">Напишите мне — обсудим ваш запрос и поймём, чем я могу быть полезна.</p>
+      <span class="topic-more">Написать →</span>
     </a>
   </div>
 </section>
 
 <!-- APPROACH -->
-<section id="approach" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
-  <div class="grid md:grid-cols-3 gap-8">
+<section id="approach" class="max-w-5xl mx-auto px-6 py-20 border-t" style="border-color:var(--line)">
+  <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color:var(--oak)">Как мы работаем</p>
+  <h2 class="serif text-3xl mb-10" style="color:var(--sage-deep)">Формат работы</h2>
+  <div class="grid md:grid-cols-3 gap-5">
     <div class="card p-6 rounded-sm">
       <p class="text-sm mb-1" style="color:var(--sage-deep)">Формат</p>
-      <p class="serif text-lg">Онлайн</p>
+      <p class="serif text-2xl">Онлайн</p>
+      <p class="text-sm mt-2" style="color:var(--ink-soft)">Из любой точки мира, где вам спокойно и удобно</p>
     </div>
     <div class="card p-6 rounded-sm">
       <p class="text-sm mb-1" style="color:var(--sage-deep)">Длительность</p>
-      <p class="serif text-lg">55 минут</p>
+      <p class="serif text-2xl">55 минут</p>
       <p class="text-sm mt-2" style="color:var(--ink-soft)">Периодичность обсуждаем на первой встрече</p>
     </div>
     <div class="card p-6 rounded-sm">
       <p class="text-sm mb-1" style="color:var(--sage-deep)">Стоимость</p>
-      <p class="serif text-lg">60 €</p>
+      <p class="serif text-2xl">60 €</p>
       <p class="text-sm mt-2" style="color:var(--ink-soft)">Перевод на карту или платёжные системы</p>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
-  <h2 class="serif text-2xl mb-8" style="color:var(--sage-deep)">Частые вопросы</h2>
+<section id="faq" class="max-w-5xl mx-auto px-6 py-20 border-t" style="border-color:var(--line)">
+  <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color:var(--oak)">Вопросы</p>
+  <h2 class="serif text-3xl mb-10" style="color:var(--sage-deep)">Частые вопросы</h2>
   <div class="space-y-3">
     <details class="card rounded-sm p-5">
       <summary class="cursor-pointer font-medium">Сколько стоит консультация?</summary>
@@ -156,7 +202,7 @@ import Base from '../layouts/Base.astro';
 </section>
 
 <!-- BOOKING -->
-<section id="booking" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
+<section id="booking" class="max-w-5xl mx-auto px-6 py-20 border-t" style="border-color:var(--line)">
   <div class="card rounded-sm p-8 md:p-12 text-center">
     <h2 class="serif text-2xl mb-6" style="color:var(--sage-deep)">Записаться на консультацию</h2>
     <div class="flex flex-wrap justify-center gap-4">
