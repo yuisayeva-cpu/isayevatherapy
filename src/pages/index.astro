@@ -1,0 +1,186 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Юлия Исаева — психолог, гештальт-терапевт онлайн">
+<!-- NAV -->
+<header class="sticky top-0 z-30" style="background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom:1px solid var(--line);">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span class="serif text-lg" style="color:var(--sage-deep)">Юлия Исаева</span>
+    <nav class="hidden md:flex gap-8 text-sm" style="color:var(--ink-soft)">
+      <a href="#about" class="hover:opacity-70">Обо мне</a>
+      <a href="#topics" class="hover:opacity-70">С чем работаю</a>
+      <a href="#approach" class="hover:opacity-70">Формат работы</a>
+      <a href="#faq" class="hover:opacity-70">Вопросы</a>
+    </nav>
+    <a href="#booking" class="btn-primary text-sm px-4 py-2 rounded-sm">Записаться</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-5xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-5 gap-10 items-center">
+  <div class="md:col-span-3 fade-in">
+    <p class="text-sm mb-4" style="color:var(--sage-deep)">Психолог, гештальт-терапевт · онлайн</p>
+    <h1 class="serif text-4xl md:text-5xl leading-[1.15]" style="color:var(--ink)">
+      [заголовок — придумаем позже]
+    </h1>
+    <p class="mt-6 text-lg max-w-md" style="color:var(--ink-soft); line-height:1.7">
+      [подзаголовок — придумаем позже]
+    </p>
+    <div class="mt-8 flex flex-wrap gap-4 items-center">
+      <a href="#booking" class="btn-primary px-6 py-3 rounded-sm text-sm">Записаться на консультацию</a>
+      <a href="#about" class="text-sm underline" style="color:var(--sage-deep)">Узнать больше обо мне</a>
+    </div>
+  </div>
+  <div class="md:col-span-2">
+    <img src="/images/yulia.jpg" alt="Юлия Исаева" class="aspect-[4/5] rounded-sm w-full object-cover">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
+  <div class="grid md:grid-cols-5 gap-10">
+    <h2 class="serif text-2xl md:col-span-2" style="color:var(--sage-deep)">Обо мне</h2>
+    <div class="md:col-span-3 space-y-4" style="color:var(--ink-soft); line-height:1.75">
+      <p>
+        Работаю в гештальт-подходе — в центре внимания контакт с собой, своими чувствами
+        и переживаниями, умение видеть и контактировать с Другим. Помогаю лучше понять
+        внутренние процессы, заметить повторяющиеся сценарии и найти более устойчивые
+        способы справляться с трудностями. Веду частную практику более 5 лет: работаю
+        с внутренними кризисами, эмиграцией, депрессивными состояниями, самоценностью
+        и стыдом, тревогой, сложностями в отношениях и сепарацией.
+      </p>
+      <p>
+        Для меня важны бережность, уважение к опыту клиента и создание безопасного
+        пространства, в котором можно исследовать себя и происходящее в жизни.
+      </p>
+      <p>
+        Образование: диплом о профессиональной переподготовке «Психологическое
+        консультирование» (680 часов, АНО ДПО «СИПО», Москва, 2021) и диплом
+        «Гештальт-подход в психологическом консультировании» (Институт
+        гештальт-терапии и практической психологии, 2024). Дополнительно —
+        программа «Московский Гештальт Институт», 1 ступень (180 часов) и
+        постдипломная программа CGTI (Тбилиси) «SELF: от теории к клинической
+        практике» под руководством Jean-Marie Robine (240 часов), включавшая
+        отдельный блок по работе со стыдом.
+      </p>
+      <div class="flex flex-wrap gap-2 pt-2">
+        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">Диплом — СИПО, 2021</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">Диплом — Гештальт-подход, 2024</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">МГИ, 1 ступень</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background:var(--clay-soft); color:var(--sage-deep)">CGTI, «SELF»</span>
+        <span class="text-xs px-3 py-1 rounded-full border border-dashed" style="border-color:var(--oak); color:var(--ink-soft)">Сертификат [программа] — ноябрь 2026</span>
+      </div>
+      <p class="text-sm">Также проходила семинары CGTI «Self Theory in the Treatment of Crisis, Trauma, and Bereavement» (Andre Lamy, 2025) и «How should Gestalt therapists adapt their approach to changes in the modern world» (Jan Roubal, 2025), курсы по диагностике личности, основам сексологии и Coursera (Женевский университет) — полный список по запросу.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TOPICS -->
+<section id="topics" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
+  <h2 class="serif text-2xl mb-2" style="color:var(--sage-deep)">С чем я работаю</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+    <a href="/articles/emigration/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+      <h3 class="serif text-lg mb-2">Эмиграция</h3>
+      <p class="text-sm" style="color:var(--ink-soft)">Адаптация на новом месте, потеря опоры, чувство «между двумя домами».</p>
+    </a>
+    <a href="/articles/depression/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+      <h3 class="serif text-lg mb-2">Депрессия</h3>
+      <p class="text-sm" style="color:var(--ink-soft)">Потеря сил и интереса, ощущение, что «всё через силу».</p>
+    </a>
+    <a href="/articles/self-worth/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+      <h3 class="serif text-lg mb-2">Самоценность</h3>
+      <p class="text-sm" style="color:var(--ink-soft)">Внутренний критик, сравнение себя с другими, чувство «со мной что-то не так».</p>
+    </a>
+    <a href="/articles/shame/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+      <h3 class="serif text-lg mb-2">Стыд</h3>
+      <p class="text-sm" style="color:var(--ink-soft)">Желание спрятаться, ощущение себя «неправильным», сложности говорить о своём опыте.</p>
+    </a>
+    <a href="/articles/anxiety/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+      <h3 class="serif text-lg mb-2">Тревога</h3>
+      <p class="text-sm" style="color:var(--ink-soft)">Постоянное напряжение, тревожные мысли, сложности с тем, чтобы расслабиться.</p>
+    </a>
+    <a href="/articles/relationships/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+      <h3 class="serif text-lg mb-2">Отношения</h3>
+      <p class="text-sm" style="color:var(--ink-soft)">Конфликты, дистанция, повторяющиеся сценарии с партнёром.</p>
+    </a>
+    <a href="/articles/separation/" class="card topic-card block p-6 rounded-sm hover:shadow-sm transition-colors">
+      <h3 class="serif text-lg mb-2">Сепарация</h3>
+      <p class="text-sm" style="color:var(--ink-soft)">Отделение от родителей, поиск своей опоры, выход из созависимых сценариев.</p>
+    </a>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="card p-6 rounded-sm">
+      <p class="text-sm mb-1" style="color:var(--sage-deep)">Формат</p>
+      <p class="serif text-lg">Онлайн</p>
+    </div>
+    <div class="card p-6 rounded-sm">
+      <p class="text-sm mb-1" style="color:var(--sage-deep)">Длительность</p>
+      <p class="serif text-lg">55 минут</p>
+      <p class="text-sm mt-2" style="color:var(--ink-soft)">Периодичность обсуждаем на первой встрече</p>
+    </div>
+    <div class="card p-6 rounded-sm">
+      <p class="text-sm mb-1" style="color:var(--sage-deep)">Стоимость</p>
+      <p class="serif text-lg">60 €</p>
+      <p class="text-sm mt-2" style="color:var(--ink-soft)">Перевод на карту или платёжные системы</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
+  <h2 class="serif text-2xl mb-8" style="color:var(--sage-deep)">Частые вопросы</h2>
+  <div class="space-y-3">
+    <details class="card rounded-sm p-5">
+      <summary class="cursor-pointer font-medium">Сколько стоит консультация?</summary>
+      <p class="mt-3 text-sm" style="color:var(--ink-soft)">60 € за сессию длительностью 55 минут. Оплата переводом на карту или через платёжные системы, до начала встречи.</p>
+    </details>
+    <details class="card rounded-sm p-5">
+      <summary class="cursor-pointer font-medium">С какими запросами вы не работаете?</summary>
+      <p class="mt-3 text-sm" style="color:var(--ink-soft)">Я не работаю с детьми, с любыми видами химических зависимостей, психическими расстройствами и расстройствами сексуального характера. В этих случаях лучше обратиться к профильному специалисту.</p>
+    </details>
+    <details class="card rounded-sm p-5">
+      <summary class="cursor-pointer font-medium">Как проходит первая встреча?</summary>
+      <p class="mt-3 text-sm" style="color:var(--ink-soft)">[Заменить: чего ожидать на первой сессии]</p>
+    </details>
+    <details class="card rounded-sm p-5">
+      <summary class="cursor-pointer font-medium">Соблюдается ли конфиденциальность?</summary>
+      <p class="mt-3 text-sm" style="color:var(--ink-soft)">Всё, что обсуждается на сессиях, остаётся строго между нами. Исключения возможны только в случаях, предусмотренных законом — например, при угрозе жизни и здоровью.</p>
+    </details>
+    <details class="card rounded-sm p-5">
+      <summary class="cursor-pointer font-medium">Можно ли отменить или перенести сессию?</summary>
+      <p class="mt-3 text-sm" style="color:var(--ink-soft)">Да, не позднее чем за 24 часа до встречи. При отмене менее чем за сутки сессия оплачивается полностью. Если перенос или отмену инициирую я менее чем за 24 часа — следующая сессия для вас бесплатна.</p>
+    </details>
+    <details class="card rounded-sm p-5">
+      <summary class="cursor-pointer font-medium">Что нужно подготовить для сессии?</summary>
+      <p class="mt-3 text-sm" style="color:var(--ink-soft)">Найдите спокойное, тихое место — такое, где вам комфортно и безопасно, где никто не потревожит и не услышит. Постарайтесь быть в этот час одни: присутствие рядом других людей мешает открытости разговора. И заранее проверьте интернет-соединение — стабильная связь помогает ничему не мешать нашему разговору.</p>
+    </details>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="max-w-5xl mx-auto px-6 py-16 border-t" style="border-color:var(--line)">
+  <div class="card rounded-sm p-8 md:p-12 text-center">
+    <h2 class="serif text-2xl mb-6" style="color:var(--sage-deep)">Записаться на консультацию</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/77011109222" class="btn-primary px-6 py-3 rounded-sm text-sm">Написать в WhatsApp</a>
+      <a href="mailto:yu.isayeva@gmail.com" class="px-6 py-3 rounded-sm text-sm border" style="border-color:var(--line); color:var(--sage-deep)">Написать на email</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t" style="border-color:var(--line)">
+  <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-4 justify-between items-center text-sm" style="color:var(--ink-soft)">
+    <span>© 2026 Юлия Исаева</span>
+    <div class="flex gap-6">
+      <a href="https://wa.me/77011109222" class="hover:opacity-70">WhatsApp</a>
+      <a href="mailto:yu.isayeva@gmail.com" class="hover:opacity-70">yu.isayeva@gmail.com</a>
+      <a href="#" class="hover:opacity-70">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+</Base>
