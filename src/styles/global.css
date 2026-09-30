@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root{
+  --bg: #EFE9DE; --bg-card: #FBF8F2; --ink: #3A352C; --ink-soft: #6B6353;
+  --sage: #7A816C; --sage-deep: #565C49; --clay: #AE6965; --clay-soft: #E4C9C6;
+  --oak: #A58B71; --line: #D9CFBD;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg: #26241D; --bg-card: #322F26; --ink: #EFE9DE; --ink-soft: #C9C0AE;
+    --sage: #9BA38A; --sage-deep: #C3CBB2; --clay: #CE908C; --clay-soft: #4A3630;
+    --oak: #C7AD8E; --line: #45403390;
+  }
+}
+:root[data-theme="dark"]{
+  --bg: #26241D; --bg-card: #322F26; --ink: #EFE9DE; --ink-soft: #C9C0AE;
+  --sage: #9BA38A; --sage-deep: #C3CBB2; --clay: #CE908C; --clay-soft: #4A3630;
+  --oak: #C7AD8E; --line: #45403390;
+}
+body{ background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; }
+.serif{ font-family: 'Playfair Display', serif; }
+.card{ background: var(--bg-card); border: 1px solid var(--line); }
+.topic-card{ border-top: 3px solid var(--oak); }
+.topic-card:hover{ border-top-color: var(--clay); }
+::selection{ background: var(--clay-soft); }
+.btn-primary{ background: var(--sage-deep); color: var(--bg-card); }
+.btn-primary:hover{ background: var(--sage); }
+a{ transition: opacity .15s ease; }
+.fade-in{ animation: fadeIn .9s ease both; }
+@keyframes fadeIn{
+  from{ opacity:0; transform: translateY(10px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce){ .fade-in{ animation: none; } }
+
+/* Статьи */
+article p{ margin-bottom: 1.4em; line-height: 1.85; color: var(--ink-soft); }
+article .lead{ color: var(--ink); font-size: 1.15rem; }
+article .closing{ color: var(--ink); font-style: italic; }
+.pull-quote{
+  font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem; line-height: 1.5;
+  color: var(--sage-deep); border-left: 3px solid var(--clay); padding-left: 1.25rem; margin: 2.5rem 0;
+}
