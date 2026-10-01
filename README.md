@@ -1,37 +1,43 @@
 # isayevatherapy.com
 
-Сайт Юлии Исаевой — психолога, гештальт-терапевта. Astro + Tailwind, хостинг на GitHub Pages.
+Сайт Юлии Исаевой — психолога, гештальт-терапевта: https://isayevatherapy.com
 
-## Структура
+Каждое сохранение (Commit changes) в этом репозитории автоматически публикуется на сайт примерно за 1–2 минуты.
 
-- `src/pages/index.astro` — главная
-- `src/pages/articles/*.astro` — статьи по темам
-- `src/layouts/` — общий каркас страницы и шаблон статьи
-- `src/styles/global.css` — цвета и стили
-- `public/images/yulia.jpg` — фото
-- `public/CNAME` — домен для GitHub Pages
+## Как поменять текст
 
-## Локальный запуск
+1. Найдите нужный файл:
+   - главная страница — `src/pages/index.astro`
+   - статьи — папка `src/pages/articles/`:
+     `emigration.astro` (эмиграция), `depression.astro` (депрессия), `self-worth.astro` (самоценность), `shame.astro` (стыд), `anxiety.astro` (тревога), `relationships.astro` (отношения), `separation.astro` (сепарация)
+   - политика конфиденциальности — `src/pages/privacy.astro`
+2. Откройте файл и нажмите карандаш ✏️ справа вверху.
+3. Найдите текст (Cmd + F) и исправьте **только слова между угловыми скобками**. Например:
+   `<p class="serif text-2xl">60 €</p>` → `<p class="serif text-2xl">70 €</p>`
+   Сами `<p>`, `</p>`, кавычки и всё внутри `class="..."` не трогайте.
+4. Нажмите зелёную кнопку **Commit changes**, затем ещё раз **Commit changes** в появившемся окне.
 
-```bash
-npm install
-npm run dev
-```
+## Как поменять фото
 
-## Публикация
+1. Назовите новое фото ровно `yulia.jpg` (лучше вертикальное, примерно 4:5).
+2. Откройте папку `public/images`.
+3. **Add file → Upload files**, перетащите фото.
+4. **Commit changes** — старое фото заменится новым.
 
-Любой push в ветку `main` автоматически собирает и публикует сайт (`.github/workflows/deploy.yml`).
+## Как проверить, что всё опубликовалось
 
-## DNS для isayevatherapy.com
+- Вкладка **Actions** сверху: зелёная галочка ✅ — сайт обновился.
+- Красный крестик ❌ — что-то сломалось при правке. Живой сайт при этом остаётся прежним. Можно вернуть прошлую версию файла через **History** или попросить помощи.
 
-У регистратора домена:
+## Что лучше делать с помощью
 
-| Тип   | Имя | Значение              |
-|-------|-----|-----------------------|
-| A     | @   | 185.199.108.153       |
-| A     | @   | 185.199.109.153       |
-| A     | @   | 185.199.110.153       |
-| A     | @   | 185.199.111.153       |
-| CNAME | www | yuisayeva-cpu.github.io |
+Новые статьи и разделы, изменения дизайна, а также случаи, когда после правки в Actions появился красный крестик.
 
-Затем в репозитории: Settings → Pages → Source: GitHub Actions; Custom domain: `isayevatherapy.com`; включить Enforce HTTPS.
+---
+
+## Техническое
+
+- Astro + Tailwind, хостинг GitHub Pages, сборка — `.github/workflows/deploy.yml`.
+- `src/layouts/` — общий каркас страницы и шаблон статьи; `src/styles/global.css` — цвета и стили.
+- Домен: `public/CNAME`. DNS у Namecheap: A-записи `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; CNAME `www` → `yuisayeva-cpu.github.io`.
+- Локальный запуск: `npm install`, затем `npm run dev`.
